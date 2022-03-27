@@ -1,0 +1,124 @@
+.header {
+  height: auto;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding-bottom: 1rem;
+  .topHeader {
+    height: 25px;
+    width: 100%;
+    background: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding-left: 20rem;
+    padding-right: 3rem;
+
+    .top__ul {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      font-size: 0.782rem;
+      li {
+        margin-right: 2.3rem;
+        cursor: pointer;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          height: 1px;
+          width: 100%;
+          background-color: rgb(255, 115, 0);
+          display: none;
+        }
+        &.active {
+          color: rgb(255, 115, 0);
+        }
+        &:hover {
+          color: rgb(255, 115, 0);
+          &::before {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  nav {
+    padding: 0.6rem 4.5rem;
+    .main__ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .img {
+        margin-right: 2.5rem;
+        cursor: pointer;
+        img {
+          width: 8.5rem;
+        }
+      }
+      .input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // margin-left: 2rem;
+        .inputs {
+          background-color: rgb(233, 240, 248);
+          padding: 0.2rem 1rem;
+          height: 2.9rem;
+          width: 40rem;
+          box-sizing: border-box;
+          outline: none;
+          border: none;
+          &::placeholder {
+            font-weight: 500;
+            font-size: 1rem;
+          }
+        }
+        .search__icon {
+          height: 2.9rem;
+          width: 3.2rem;
+          background-color: rgb(247, 117, 11);
+          font-size: 1.5rem;
+          display: grid;
+          place-items: center;
+          cursor: pointer;
+          .icon {
+            font-size: inherit;
+            color: #fff;
+          }
+        }
+      }
+      .cart {
+        margin-right: 2rem;
+        font-size: 1.7rem;
+      }
+      .percentage__img {
+        cursor: pointer;
+        img {
+          width: 11.5rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .topHeader {
+    display: none !important;
+  }
+  .main__ul {
+    justify-content: space-between;
+    .input {
+      display: none !important;
+    }
+    .cart {
+      margin-left: 50%;
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .percentage__img {
+    display: none;
+  }
+}

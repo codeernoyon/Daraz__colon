@@ -1,0 +1,233 @@
+.footer {
+  height: auto;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem 0;
+
+  .top__section {
+    height: 100%;
+    width: 100%;
+    background: rgb(46, 46, 84);
+
+    .left {
+      width: 50%;
+      padding: 1.3rem 4rem;
+      color: rgba(245, 248, 250, 0.918);
+
+      h3 {
+        margin-bottom: 0.5rem;
+        color: rgba(246, 249, 252, 0.849);
+        font-weight: 500;
+      }
+      li {
+        margin: 0.2rem 0;
+        font-size: 0.9rem;
+        color: aliceblue;
+        position: relative;
+        left: 0;
+        transition: 0.3s linear;
+
+        a {
+          &:hover {
+            color: #ff6801;
+          }
+        }
+        &:hover {
+          left: 0.4rem;
+        }
+      }
+      .inner__left {
+        .customer__care {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .right {
+      padding-left: 4rem;
+      width: 50%;
+      flex-direction: column;
+      align-items: flex-start;
+      .right__top {
+        justify-content: flex-start;
+        .QR {
+          margin-right: 1.4rem;
+          img {
+            width: 7rem;
+            border-radius: 1rem;
+            cursor: pointer;
+          }
+        }
+        .daraz {
+          flex-direction: column;
+          justify-content: flex-start;
+          .icon {
+            img {
+              width: 3rem;
+              cursor: pointer;
+            }
+          }
+          .daraz__text {
+            color: rgba(255, 254, 254, 0.925) !important;
+            span {
+              cursor: pointer;
+            }
+            .title {
+              display: block;
+              color: #ff6801;
+            }
+          }
+        }
+      }
+      .right__bottm {
+        margin-top: 1rem;
+        .app {
+          background: url("../../assets//footer/all-icon.png");
+          background-position: 0 -110px;
+          width: 120px;
+          height: 40px;
+          margin-right: 0.5rem;
+          cursor: pointer;
+        }
+        .google {
+          background: url("../../assets//footer/all-icon.png");
+          background-position: 0 -65px;
+          width: 134px;
+          height: 40px;
+          margin-right: 0.5rem;
+          cursor: pointer;
+        }
+        .explore__ap {
+          background: url("../../assets//footer/ali-express.png") center center
+            no-repeat;
+          background-size: cover;
+          width: 134px;
+          height: 40px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .bottom__section {
+    height: auto;
+    align-items: flex-start;
+    padding: 1rem 0;
+    padding-right: 7rem;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    .icon {
+      display: inline-block;
+      background-image: url(../../assets//footer//all-icon.png);
+      margin-right: 0.3rem;
+    }
+    .title {
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: rgba(71, 71, 71, 0.549);
+    }
+    .Payment {
+      .icon {
+        width: 55px;
+        height: 40px;
+        cursor: pointer !important;
+      }
+      .case__on {
+        background-position: -161px 0;
+      }
+      .visa {
+        background-position: -60px -200px;
+      }
+      .masterCard {
+        background-position: -120px -200px;
+      }
+      .Bkas {
+        background-position: -221px -45px;
+      }
+      .fifth {
+        background-position: -221px 0;
+      }
+    }
+    .DarazInternational {
+      .icon {
+        width: 36px;
+        height: 36px;
+      }
+      .pakistan {
+        background-position: -164px -245px;
+      }
+      .bangladesh {
+        background-position: 0 -245px;
+      }
+      .srilanka {
+        background-position: -41px -245px;
+      }
+      .vutan {
+        background-position: -82px -245px;
+      }
+      .nepal {
+        background-position: -123px -245px;
+      }
+    }
+    .FollowUs {
+      .icon {
+        width: 36px;
+        height: 36px;
+      }
+      .facebook {
+        background-position: -281px -164px;
+      }
+      .daraz {
+        background-position: -240px -200px;
+      }
+      .youtube {
+        background-position: -180px -155px;
+      }
+      .tweeter {
+        background-position: -281px -123px;
+      }
+      .instagram {
+        background-position: -281px -41px;
+      }
+    }
+    .verified {
+      .icon {
+        width: 156px;
+        height: 60px;
+      }
+      .verified__img {
+        background-position: 0 0;
+      }
+    }
+    .copy__right {
+      background-color: #fff;
+      position: relative;
+      top: 2rem;
+      font-weight: 500;
+      color: rgba(85, 85, 85, 0.822);
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .footer {
+    .top__section {
+      padding: 2rem 0;
+      flex-direction: column;
+      .left {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .inner__right {
+          margin-left: 20%;
+        }
+      }
+      .right {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .inner__right {
+    margin-left: 0% !important;
+  }
+}

@@ -1,0 +1,102 @@
+.mall {
+  padding: 1rem 0;
+  .container {
+    .top__title {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+      color: #555555;
+      .btn {
+        color: #ff6801;
+
+        .button {
+          border: none;
+          font-weight: 500;
+          font-size: 1rem;
+        }
+        .icon {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .items {
+      padding: 0.8rem 0.1rem;
+      overflow: hidden;
+      .inner__items {
+        display: flex;
+        // grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        // grid-template-rows: 19rem;
+        // grid-auto-flow: dense;
+        // grid-gap: 0.5rem;
+        justify-items: center;
+        align-items: center;
+        .item {
+          background: rgb(255, 255, 255);
+          transition: 0.3s all linear;
+          min-width: 12rem;
+          height: 19rem;
+          text-align: center;
+          margin: 0 0.1rem;
+          overflow: hidden;
+          .img {
+            position: relative;
+            width: 100%;
+            height: 70%;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              background: linear-gradient(
+                rgba(255, 255, 255, 0),
+                rgba(0, 0, 0, 0.116)
+              );
+              z-index: 1;
+            }
+          }
+          .inner__text {
+            padding: 0 0.4rem;
+            position: relative;
+            .img_2 {
+              width: 4rem;
+              position: absolute;
+              top: -184%;
+              left: 50%;
+              transform: translate(-50%, 0%);
+              background-color: rgb(255, 255, 255);
+              box-shadow: 1px 1px 10px #817f7f96;
+              z-index: 5;
+              img {
+                height: 100%;
+                width: 100%;
+              }
+            }
+            .all__text {
+              margin-top: 2rem;
+              .title {
+                overflow: hidden;
+                font-size: 1rem;
+                color: #000000;
+                font-weight: 500;
+                margin-bottom: 0.25rem;
+              }
+              .text {
+                font-size: 0.9rem;
+              }
+            }
+          }
+          &:hover {
+            box-shadow: 1px 1px 10px #5353538c;
+          }
+        }
+      }
+    }
+  }
+}

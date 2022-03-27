@@ -1,0 +1,26 @@
+
+Smartphones
+Feature Phone
+Tablets
+Laptops
+Desktops
+Gaming Consoles
+Cameras
+Security Cameras
+AC Campaign       
+      
+ {Nav.map((navList) => (
+            <div className="nav__li flex" key={navList.id}>
+              <Li title={navList.title} className="li" />
+              <AiOutlineRight className="icon" />
+              <ul className="drop__down">
+                {navList.id === 1 ? DropDown13.map((dropDownLi, index) => (
+                  <li>{dropDownLi.title}</li>
+                )) : null}
+                {navList.id === 2 ? DropDown12.map((dropDownLi, index) => (
+                  <li>{dropDownLi.title}</li>
+                )) : null}
+              </ul>
+            </div>
+
+          ))}

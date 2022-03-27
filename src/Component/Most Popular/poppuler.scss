@@ -1,0 +1,78 @@
+.MostPopular {
+  padding: 2rem 0.3rem;
+  .container {
+    .top__title {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+      color: #555555;
+      .btn {
+        color: #ff6801;
+
+        .button {
+          border: none;
+          font-weight: 500;
+          font-size: 1rem;
+        }
+        .icon {
+          font-size: 1rem;
+        }
+      }
+    }
+    .items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+      grid-template-rows: repeat(repeat(3, 1fr));
+      grid-auto-rows: auto;
+      grid-auto-flow: dense;
+      grid-gap: 0.1rem;
+      .item {
+        height: auto;
+        width: auto;
+        padding: 0.6rem 0;
+        background-color: rgb(255, 255, 255);
+        transition: 0.3s all linear;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        .all__text {
+          text-align: center;
+          line-height: 1.3rem;
+          margin-top: 0.4rem;
+          .title {
+            font-size: 0.9rem;
+          }
+          .text {
+            font-size: 0.7rem;
+          }
+        }
+        .img {
+          img {
+            width: 4rem;
+          }
+        }
+        &:hover {
+          box-shadow: 1px 1px 10px #5353538c;
+        }
+        &.vertical {
+          grid-row: span 2;
+        }
+        &:nth-child(2),
+        &:nth-child(6) {
+          background: rgba(255, 222, 226, 0.897);
+        }
+        &:nth-child(4),
+        &:nth-child(8) {
+          background: rgba(228, 228, 228, 0.897);
+        }
+        &:nth-child(7),
+        &:nth-child(5) {
+          background: rgba(187, 228, 255, 0.897);
+        }
+      }
+      .horizontal {
+        grid-column: span 2;
+      }
+    }
+  }
+}

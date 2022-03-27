@@ -1,0 +1,26 @@
+a {
+  width: inherit;
+  height: inherit;
+  color: inherit;
+  padding: inherit;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+button {
+  outline: none;
+  background: transparent;
+  border: 1px solid rgb(255, 115, 0);
+  color: inherit;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
