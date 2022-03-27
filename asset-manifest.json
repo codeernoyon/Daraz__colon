@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Daraz__colon%20/static/css/main.00e87129.css",
+    "main.js": "/Daraz__colon%20/static/js/main.5012bac0.js",
+    "static/media/2.jpg": "/Daraz__colon%20/static/media/2.e6c9b02c0afcdd1bcfae.jpg",
+    "static/media/ali-express.png": "/Daraz__colon%20/static/media/ali-express.0948c7e57b548c95e59d.png",
+    "static/media/all-icon.png": "/Daraz__colon%20/static/media/all-icon.487f2001b0496b3e78fa.png",
+    "index.html": "/Daraz__colon%20/index.html",
+    "main.00e87129.css.map": "/Daraz__colon%20/static/css/main.00e87129.css.map",
+    "main.5012bac0.js.map": "/Daraz__colon%20/static/js/main.5012bac0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00e87129.css",
+    "static/js/main.5012bac0.js"
+  ]
+}
