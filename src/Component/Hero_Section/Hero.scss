@@ -124,14 +124,17 @@
   }
 }
 @media screen and (max-width: 992px) {
-  .menus {
-    display: none !important;
-  }
-  .slider__area {
-    width: 100%;
-    img {
-      width: 100% !important;
-      height: 100% !important;
+  .hero__area {
+    height: 40vh;
+    .menus {
+      display: none !important;
+    }
+    .slider__area {
+      width: 100%;
+      img {
+        width: 100% !important;
+        height: 100% !important;
+      }
     }
   }
 }

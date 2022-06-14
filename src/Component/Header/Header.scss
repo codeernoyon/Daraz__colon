@@ -3,6 +3,7 @@
   width: 100%;
   background: rgb(255, 255, 255);
   padding-bottom: 1rem;
+  // position: fixed;
   .topHeader {
     height: 25px;
     width: 100%;
@@ -104,16 +105,27 @@
   }
 }
 @media screen and (max-width: 992px) {
-  .topHeader {
-    display: none !important;
-  }
-  .main__ul {
-    justify-content: space-between;
-    .input {
+  .header {
+    .topHeader {
       display: none !important;
     }
-    .cart {
-      margin-left: 50%;
+    nav {
+      padding: 0.6rem 1rem;
+      .main__ul {
+        .img {
+          margin-right: 0;
+        }
+      }
+    }
+    .main__ul {
+      justify-content: space-around;
+      .input {
+        width: 60%;
+      }
+      .cart {
+        margin-left: 50%;
+        display: none !important;
+      }
     }
   }
 }
